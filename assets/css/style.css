@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;500;600;700;800&family=Poppins&family=Roboto&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 
 body{
     height: 100vh;
-    background-color: aquamarine;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -24,6 +28,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1F2833;
 }
 
 footer{
@@ -46,24 +51,35 @@ footer{
 }
 
 .square{
-    border: 1px solid black;
+    border: 2px solid #1F2833;
     width: calc(100% / 10);
     aspect-ratio: 1/1;
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #45A29E;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    color: white;
     
 }
 
 .active{
-    background-color: white;
+    background-color: #1F2833;
 }
 
 .btn{
-    padding: 5px 10px;
-    background-color: lightgrey;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    background-color: #1F2833;
     border-radius: 100vmax;
+    border: none;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #2c3846;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+    
 }
