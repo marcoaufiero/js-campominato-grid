@@ -1,3 +1,4 @@
+
 const grid = document.getElementById('grid');
 console.log(grid);
 
@@ -7,14 +8,24 @@ function squareGenerator(){
     return div;
 }
 
-for(let i = 0; i < 100; i++){
+function play(){
 
-    let activeSquare = squareGenerator();
+    for(let i = 0; i < 100; i++){
 
-    activeSquare.addEventListener('click', function(){
-        this.classList.add('active');
-    })
+        let activeSquare = squareGenerator();
 
-    grid.append( activeSquare);
+        activeSquare.innerText = i + 1;
+    
+        activeSquare.addEventListener('click', function(){
+            this.classList.add('active');
+            console.log(`Quadrato numero: ${activeSquare.innerText}`)
+        })
+    
 
+
+        grid.append( activeSquare);
+    
+    }
 }
+
+
