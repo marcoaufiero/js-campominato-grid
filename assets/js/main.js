@@ -10,6 +10,8 @@ function squareGenerator(){
 
 function play(){
 
+    grid.innerHTML = '';
+
     for(let i = 0; i < 100; i++){
 
         let activeSquare = squareGenerator();

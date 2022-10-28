@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    height: 100px;
+    height: 10vh;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -19,14 +19,30 @@ header{
     box-shadow: 1px 1px 10px black;
 }
 
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 30px;
+    box-shadow: -1px -1px 10px black;
+}
+
 #grid{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 40%;
+    width: 35%;
     margin-inline: auto;
-    margin-top: 50px;
 }
 
 .square{
@@ -39,6 +55,7 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    
 }
 
 .active{
